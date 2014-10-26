@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Was geht im Hackspace Siegen so?</title>
+  <script src="https://cdn.socket.io/socket.io-1.1.0.js"></script>
+  <script src="assets/scripts/wazzup.js"></script>
+  <link rel="stylesheet" href="assets/styles/wazzup.css">
+</head>
+<body>
+
+  <section id="lock">
+    <img id="lock_image" src="assets/images/closed.svg">
+  </section>
+
+  <section id="data">
+    <span class="status" data-key="temperature" data-unit="°C"></span>
+    <span class="status" data-key="pressure" data-unit="hPa"></span>
+    <span class="status" data-key="radiation" data-unit="CPM"></span>
+    <span class="status" data-key="amount_devices" data-unit="devices currently in network"></span>
+  </section>
+
+  <img id="logo_image" src="assets/images/logo.svg">
+
+</body>
+</html>

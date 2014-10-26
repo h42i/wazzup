@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "BigNoodleTitling";
+  src: url("/fonts/big_noodle_titling.ttf") format("truetype"); }
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #FF0000; }
+
+#hideAll {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: black;
+  z-index: 99; }
+
+#lock {
+  margin: 0 auto;
+  text-align: center; }
+
+#lock img {
+  width: 50vh; }
+
+#data {
+  width: 100%;
+  display: block;
+  color: #FF0000; }
+
+#data span {
+  width: 100%;
+  display: block;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+  background-color: #000000;
+  text-align: center;
+  font-family: "BigNoodleTitling";
+  font-size: 3vh; }
+
+#logo_image {
+  width: 40vh;
+  float: right;
+  padding-right: 2vh;
+  padding-top: 6vh;
+  padding-bottom: 2vh; }
+
+/*# sourceMappingURL=wazzup.css.map */
