@@ -1,6 +1,7 @@
 @font-face {
-  font-family: "BigNoodleTitling";
-  src: url("/fonts/big_noodle_titling.ttf") format("truetype"); }
+  font-family: 'FM1Regular';
+  src: url("../fonts/fm1.eot");
+  src: url("../fonts/fm1.eot") format("embedded-opentype"), url("../fonts/fm1.woff2") format("woff2"), url("../fonts/fm1.woff") format("woff"), url("../fonts/fm1.ttf") format("truetype"), url("../fonts/fm1.svg#FM1Regular") format("svg"); }
 body {
   margin: 0px;
   padding: 0px;
@@ -25,7 +26,7 @@ body {
 #data {
   width: 100%;
   display: block;
-  color: #FF0000; }
+  /* color: #FF0000; */ }
 
 #data span {
   width: 100%;
@@ -36,8 +37,8 @@ body {
   margin-bottom: 0.5vh;
   background-color: #000000;
   text-align: center;
-  font-family: "BigNoodleTitling";
-  font-size: 3vh; }
+  font-family: "FM1Regular";
+  font-size: 1.5em; }
 
 #logo_image {
   width: 40vh;

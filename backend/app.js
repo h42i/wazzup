@@ -13,7 +13,7 @@ io.on('connection', function (socket) {
     getStatus(function(s) {
       socket.emit('status', s);
     });
-  }, 100);
+  }, 500);
 });
 
 function getStatus(callback) {

@@ -1,0 +1,21 @@
+{
+  "name": "wazzup",
+  "version": "0.0.1",
+  "author": "mono <mono@hasi.it>",
+  "description": "Web dashboard for the Hackspace Siegen",
+  "scripts": {
+    "start": "node ./app.js"
+  },
+  "dependencies": {
+    "request": "2.46.x",
+    "socket.io": "1.1.x"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EddyShure/wazzup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EddyShure/wazzup/issues"
+  }
+}
