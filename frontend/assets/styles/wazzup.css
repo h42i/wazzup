@@ -1,7 +1,7 @@
 @font-face {
-  font-family: 'FM1Regular';
-  src: url("../fonts/fm1.eot");
-  src: url("../fonts/fm1.eot") format("embedded-opentype"), url("../fonts/fm1.woff2") format("woff2"), url("../fonts/fm1.woff") format("woff"), url("../fonts/fm1.ttf") format("truetype"), url("../fonts/fm1.svg#FM1Regular") format("svg"); }
+  font-family: 'BigNoodleTitlingRegular';
+  src: url("../fonts/big_noodle_titling.eot");
+  src: url("../fonts/big_noodle_titling.eot") format("embedded-opentype"), url("../fonts/big_noodle_titling.woff2") format("woff2"), url("../fonts/big_noodle_titling.woff") format("woff"), url("../fonts/big_noodle_titling.ttf") format("truetype"), url("../fonts/big_noodle_titling.svg#BigNoodleTitlingRegular") format("svg"); }
 body {
   margin: 0px;
   padding: 0px;
@@ -37,8 +37,8 @@ body {
   margin-bottom: 0.5vh;
   background-color: #000000;
   text-align: center;
-  font-family: "FM1Regular";
-  font-size: 1.5em; }
+  font-family: 'BigNoodleTitlingRegular';
+  font-size: 1.337em; }
 
 #logo_image {
   width: 40vh;
