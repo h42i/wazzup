@@ -11,3 +11,4 @@ build/Release
 node_modules
 .sass-cache
 *.css.map
+fonts

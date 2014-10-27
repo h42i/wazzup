@@ -8,20 +8,22 @@ app.listen(13374);
 function handler (req, res) {
 }
 
+var data = null;
+
 io.on('connection', function (socket) {
   setInterval(function(){
-    getStatus(function(s) {
-      socket.emit('status', s);
-    });
-  }, 500);
+    socket.emit('status', data);
+  }, 555);
 });
 
-function getStatus(callback) {
+setInterval(function() {
   request('http://status.hasi.it', function (error, response, body) {
     if (!error && response.statusCode == 200) {
-      callback(JSON.parse(body));
+      data = JSON.parse(body);
     }
   });
-}
+}, 200);
+
+
 
 
