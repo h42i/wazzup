@@ -5,6 +5,7 @@ var fs = require('fs');
 
 app.listen(13374);
 
+// Placeholder.
 function handler (req, res) {
 }
 
@@ -19,7 +20,10 @@ io.on('connection', function (socket) {
 setInterval(function() {
   request('http://status.hasi.it', function (error, response, body) {
     if (!error && response.statusCode == 200) {
-      data = JSON.parse(body);
+      var json = JSON.parse(body)
+      if (json != data) {
+        data = json
+      }
     }
   });
 }, 200);
