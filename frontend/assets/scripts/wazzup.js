@@ -1,4 +1,4 @@
-var socket = io('http://was.geht.im.hackspace.siegen.so:13374');
+var socket = io('http://127.0.0.1:13374');
 var elems = document.getElementsByClassName("status");
 
 socket.on('status', function (data) {
