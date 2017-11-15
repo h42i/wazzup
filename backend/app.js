@@ -5,15 +5,16 @@ var fs = require('fs');
 
 app.listen(13374);
 
-io.on('connection', function (socket) {
-  
-  setInterval(function() {
-    request('http://status.hasi.it', function (error, response, body) {
-      if (!error && response.statusCode == 200) {
-        socket.emit('status', JSON.parse(body));
-      }
-    });
-  }, 500)
+function pullData(socket) {
+  request('http://status.hasi.it', function (error, response, body) {
+    if (!error && response.statusCode == 200) {
+      socket.emit('status', JSON.parse(body));
+    }
+  });
+}
 
+io.on('connection', function (socket) {
+  pullData(socket);
+  setInterval(pullData, 5000, socket)
 });
 
